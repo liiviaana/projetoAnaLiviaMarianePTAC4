@@ -1,0 +1,82 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fbfaf9;
+  color: #3a2a20;
+  line-height: 1.5;
+}
+
+header {
+  background: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+main {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 { margin-bottom: 12px; color: #000000; }
+
+form { display: grid; gap: 12px; }
+
+label { display: grid; gap: 4px; font-weight: bold; font-size: 14px; }
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  background: #000000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover { background: #000000; }
+
+.topo-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.resumo { margin-bottom: 12px; color: #000000; }
+
+ul { list-style: none; display: grid; gap: 12px; }
+
+li {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 14px;
+  display: grid;
+  gap: 4px;
+}
+
+.linha { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.estrelas { color: #f2f523; font-size: 18px; }
+.tag { font-size: 12px; background: #fff; color: #000000; padding: 2px 8px; border-radius: 20px; }
+.remover { background: transparent; color: #000000; padding: 4px 8px; font-size: 14px; }
+.remover:hover { background: #fff; }
+
+footer { text-align: center; padding: 20px; color: #000000; font-size: 14px; }

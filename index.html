@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação de Pratos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Avaliação de Pratos</h1>
+    <p>Cadastre pratos, dê notas e acompanhe os favoritos.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Nova avaliação</h2>
+      <form id="form-prato">
+        <label>Nome do prato
+          <input type="text" id="nome" placeholder="Ex.: Lasanha à bolonhesa" required>
+        </label>
+        <label>Categoria
+          <select id="categoria">
+            <option>Entrada</option>
+            <option>Prato principal</option>
+            <option>Sobremesa</option>
+            <option>Bebida</option>
+          </select>
+        </label>
+        <label>Nota (1 a 5)
+          <select id="nota">
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★</option>
+            <option value="3">★★★</option>
+            <option value="2">★★</option>
+            <option value="1">★</option>
+          </select>
+        </label>
+        <label>Comentário
+          <textarea id="comentario" rows="3" placeholder="O que você achou?"></textarea>
+        </label>
+        <button type="submit">Salvar avaliação</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="topo-lista">
+        <h2>Pratos avaliados</h2>
+        <select id="filtro">
+          <option value="todas">Todas as categorias</option>
+          <option>Entrada</option>
+          <option>Prato principal</option>
+          <option>Sobremesa</option>
+          <option>Bebida</option>
+        </select>
+      </div>
+      <p id="resumo" class="resumo"></p>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+
+  <footer>Projeto acadêmico • Avaliação de Pratos</footer>
+  <script src="script.js"></script>
+</body>
+</html>
